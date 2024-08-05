@@ -193,4 +193,3 @@ nordic_countries, es, ru = names[:5], names[5], names[6]
 print("Nordic countries:", nordic_countries)
 print("Estonia:" , es)
 print("Russia:", ru)
-print
