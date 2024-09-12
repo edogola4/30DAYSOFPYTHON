@@ -558,21 +558,18 @@ Name	Country	City	Weight	Height	BMI	Birth Year	Current Year	Ages
 
 # Exercises: Day 25
 
-# 1. Read the hacker_news.csv file from data directory
+# Exercise 1: Create a Pandas Series
+'Create a Pandas Series from a list of numbers (1 to 10).'
 
 import pandas as pd
 
-# Load the hacker_news.csv dataset
-df = pd.read_csv('hacker_news.csv')
+# List of numbers
+numbers = list(range(1, 11))
 
-# Display the first few rows of the dataset
-print(df.head())
+# Create a Series
+series_default = pd.Series(numbers)
 
+series_default
 
-# 2. Get the first five rows
-
-# General information about the dataset
-print(df.info())
-
-
-# 3. 
+# Test case for Exercise 1
+assert series_default.equals(pd.Series([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])), "Test Case 1 Failed"
